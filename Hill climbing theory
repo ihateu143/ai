@@ -1,0 +1,32 @@
+Hill climbing
+In computer science, hill climbing is a mathematical optimization technique which belongs to
+the family of local search. It is an iterative algorithm that starts with an arbitrary solution to a problem,
+then attempts to find a better solution by incrementally changing a single element of the solution. If
+the change produces a better solution, an incremental change is made to the new solution, repeating
+until no further improvements can be found.
+For example, hill climbing can be applied to the travelling salesman problem. It is easy to find
+an initial solution that visits all the cities but will be very poor compared to the optimal solution. The
+algorithm starts with such a solution and makes small improvements to it, such as switching the order
+in which two cities are visited. Eventually, a much shorter route is likely to be obtained.
+Hill climbing is good for finding a local optimum (a solution that cannot be improved by
+considering a neighboring configuration) but it is not necessarily guaranteed to find the best possible
+solution (the global optimum) out of all possible solutions (the search space). In convex problems,
+hill-climbing is optimal. Examples of algorithms that solve convex problems by hill-climbing include
+the simplex algorithm for linear programming and binary search.
+The characteristic that only local optima are guaranteed can be cured by using restarts (i.e
+repeated local search). It can also be cured by using more complex schemes based on iterations,
+like iterated local search, based on memory, like reactive search optimization and tabu search, or
+based on memory-less stochastic modifications, like simulated annealing.
+
+
+Algorithm:
+function HILL-CLIMBING(problem) returns a solution state
+inputs: problem, a problem
+static: current, a node
+next, a node
+current <— MAKE-NODE(INITIAL-STATE[problem])
+loop do
+next— a highest-valued successor of current
+if VALUE[next] < VALUE[current] then return current
+current *—next
+end
