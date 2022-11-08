@@ -1,0 +1,67 @@
+Theory:
+Prolog is a general-purpose logic programming language associated with artificial intelligence and
+computational linguistics Prolog has its roots in first-order logic, a formal logic, and unlike many other
+programming languages, Prolog is declarative: the program logic is expressed in terms of relations,
+represented as facts and rules. A computation is initiated by running a query over these relations. The
+language was first conceived by a group around Alain Colmerauer in Marseille, France, in the early 1970s and
+the first Prolog system was developed in 1972 by Colmerauer with Philippe Roussel.
+Prolog was one of the first logic programming languages, and remains the most popular among such
+languages today, with several free and commercial implementations available. The language has been used
+for theorem proving, expert systems, as well as its original intended field of use, natural language processing.
+Modern Prolog environments support creating graphical user interfaces, as well as administrative and
+networked applications.
+➢ Invented in early seventies by Alain Colmerauer in France and Robert Kowalski in Britain.
+➢ Prolog = Programmation en Logique (Programming in Logic).
+➢ Prolog is a declarative programming language
+unlike most common programming languages.
+➢ In a declarative language
+➢ the programmer specifies a goal to be achieved
+➢ the Prolog system works out how to achieve it
+➢ relational databases owe something to Prolog
+➢ traditional programming languages are said to be procedural
+Procedural programmer must specify in detail how to solve a problem:
+1. mix ingredients;
+2. beat until smooth;
+3. bake for 20 minutes in a moderate oven;
+4. remove tin from oven;
+5. put on bench;
+6. close oven;
+7. turn off oven;
+in purely declarative languages, the programmer only states what the problem is and leaves the rest to
+the language system.
+Applications of Prolog
+✓ Some applications of Prolog are:
+✓ intelligent data base retrieval
+✓ natural language understanding
+✓ expert systems
+✓ specification language
+✓ machine learning
+✓ robot planning
+✓ automated reasoning
+
+Department of Information Technology
+✓ problem solving
+Relations
+Prolog programs specify relationships among objects and properties of objects.
+When we say, "John owns the book", we are declaring the ownership relationship between two
+objects: John and the book. When we ask, "Does John own the book?" we are trying to find out about
+a relationship.
+
+Relationships can also be rules such as:
+Two people are sisters if they are both female and they have the same parents.
+A rule allows us to find out about a relationship even if the relationship isn't explicitly stated as a fact.
+A little more on being sisters
+As usual in programming, you need to be a bit careful how you phrase things:
+The following would be better:
+A and B are sisters if
+A and B are both female and
+they have the same father and
+they have the same mother and
+A is not the same as B
+Programming in Prolog:
+Declare facts describing explicit relationships between objects and properties objects might have (e.g.
+Mary likes pizza, grass has colour green, Fido is_a_dog, Mizuki taught Paul Japanese ).
+Define rules defining implicit relationships between objects (e.g. the sister rule above) and/or rules
+defining implicit object properties (e.g. X is a parent if there is a Y such that Y is a child of X).
+One then uses the system by: asking questions above relationships between objects, and/or about
+object properties (e.g. does Mary like pizza? is Joe a parent?)
