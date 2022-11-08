@@ -1,0 +1,43 @@
+Theory:
+Robots have the potential to change our economy, our health, our standard of living,
+our knowledge and the world in which we live. As the technology progresses, we are finding
+new ways to use robots. The RT 3200 robot delivers an eleven-pound payload across a 36
+inch pick and a placecycle in less than 1.3 seconds, maintaining a repeatability of 0.001. In
+addition to speed and precision, factor in a new powerful control system, and you have an
+exceptional automation system.
+The net benefits are:
+1. Fastest cycle time of any assembly robot assures you higher throughput and
+increased productivity.
+2. Most powerful control system insures quick system implementation and fast return on
+yourinvestment.
+3. Modular design and proven reliability make this robot very flexible and easy to service.
+
+Included is the robot arm, controller, cables, teach pendant and documentation. (The
+teach pendant is just sitting on the top of the arm, it is not mounted there). This robot arm
+moves up and down at the top of the base, rotates at the top of the base,goes in and out of the
+arm and rotates at the end of the arm.
+
+
+(a) Controller: Controller controls and triggers the actions by processing received senses.
+
+(c) Teach Terminal: Enable one to move the robot around as desired and program the points
+and motions you want.
+Successful applications:
+1. Mechanical assembly
+2. Machine tool load/unload
+3. Water jet cutting
+4. Assembly adjustments
+5. Wire harness and connector assembly
+Vacuum world problem:
+Two locations A and B are to be cleaned. At a time only one location can be cleaned. Vacuum
+cleaner can visit these locations by moving left or right and perform clean operation. Hence
+percept’sinclude cleanliness status of A and B and current location of vacuum cleaner.
+e.g.,
+1) state (ac, bd, a) represents that, A is clean, B is dirty and currently vacuum cleaner is in A.
+2) state (ad, bd, b) represents that, A is dirty, B is dirty and currently vacuum cleaner is in B.
+
+State (ad, bd, a)
+Total 8 states need to be discussed so as to reach the clean state in both blocks starting from
+any random state. If current location of vacuum cleaner is clean, then cleaner should move to
+another block. Otherwise, it should clean that location and then move to check status of
+cleanliness in another block.
