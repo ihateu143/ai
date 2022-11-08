@@ -1,0 +1,33 @@
+Heuristic Function:
+A heuristic function, is a function that calculates an approximate cost to a problem (or ranks
+alternatives).
+All of the search methods in the preceding section are uninformed in that they did not take into
+account the goal. They do not use any information about where they are trying to get to unless they
+happen to stumble on a goal. One form of heuristic information about which nodes seem the most
+promising is a heuristic function h(n), which takes a node n and returns a non-negative real number
+that is an estimate of the path cost from node n to a goal node. The function h(n) is
+an underestimate if h(n) is less than or equal to the actual cost of a lowest-cost path from node n to a
+goal.
+Algorithm:
+1. Evaluate the initial state if it is goal state quit otherwise current state is initial state.
+2. Select a new operator for this state and generate a new state.
+3. Evaluate the new state
+• if it is closer to goal state than current state make it current state
+• if it is not better ignore
+4. If the current state is goal state or no new operators available, quit. Otherwise repeat from.
+
+
+A* Search:
+
+A* is like Dijkstra’s algorithm in that it can be used to find a shortest path. A* is like Greedy Best-
+First-Search in that it can use a heuristic to guide itself. In the simple case, it is as fast as Greedy Best-
+First-Search.
+
+The secret to its success is that it combines the pieces of information that Dijkstra’s algorithm uses
+(favoring vertices that are close to the starting point) and information that Greedy Best-First-Search
+uses (favoring vertices that are close to the goal). In the standard terminology used when talking about
+A*, g(n) represents the exact cost of the path from the starting point to any vertex n,
+and h(n) represents the heuristic estimated cost from vertex n to the goal. In the above diagrams, the
+yellow (h) represents vertices far from the goal and teal (g) represents vertices far from the starting
+point. A* balances the two as it moves from the starting point to the goal. Each time through the main
+loop, it examines the vertex n that has the lowest f(n) = g(n) + h(n).
