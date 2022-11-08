@@ -1,0 +1,16 @@
+Breadth First Search (BFS) :
+This is a very different approach for traversing the graph nodes. The aim of BFS algorithm is to
+traverse the graph as close as possible to the root node. Queue is used in the implementation of the
+breadth first search. Let’s see how BFS traversal works with respect to the following graph:
+
+If we do the breadth first traversal of the above graph and print the visited node as the output, it will
+print the following output. “A B C D E F”. The BFS visits the nodes level by level, so it will start with
+level 0 which is the root node, and then it moves to the next levels which are B, C and D, then the last
+levels which are E and F.
+
+WaterJug Problem Statement:
+We are provided with two jugs: one having the capacity to hold 3 gallons of water
+and the other has the capacity to hold 4 gallons of water. There is no other measuring
+equipment available and the jugs also do not have any kind of marking on them. So, the
+agent’s task here is to fill the 4-gallon jug with 2 gallons of water by using only these
+two jugs and no other material. Initially, both our jugs are empty.
